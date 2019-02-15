@@ -1,0 +1,19 @@
+{
+  "name": "foodNative",
+  "keywords": [
+    "vue",
+    "node",
+    "react",
+    "react-native",
+    "lerna",
+    "react-navigation",
+    "expo"
+  ],
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.13.0"
+  },
+  "scripts": {
+    "rn": "cd packages/client-react-native && expo start --ios"
+  }
+}
