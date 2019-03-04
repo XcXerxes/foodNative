@@ -4,6 +4,7 @@ import router from './routes'
 import store from './vuex/store'
 import './utils/rem'
 import './registerServiceWorker'
+import './assets/styles/reset.css'
 
 Vue.config.productionTip = false
 
