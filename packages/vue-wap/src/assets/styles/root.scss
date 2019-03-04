@@ -1,0 +1,17 @@
+$vf-primary: 31, 116, 255;
+$vf-secondary: 121, 49, 177;
+$vf-danger: 255, 71, 87;
+$vf-success: 70, 201, 58;
+$vf-warning: 155, 186, 0;
+$vf-dark:30, 30, 30;
+$vf-light: 245, 245, 245;
+
+$vf-colors: (
+  primary: $vf-primary,
+  secondary: $vf-secondary,
+  danger: $vf-danger,
+  success: $vf-success,
+  warning: $vf-warning,
+  dark: $vf-dark,
+  light: $vf-light
+);
