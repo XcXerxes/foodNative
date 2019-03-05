@@ -2,12 +2,10 @@
   <header class="v-header">
     <a class="v-header__menu">
     </a>
-    <router-link to="/" class="v-header__body">
-      
-    </router-link>
+    <router-link to="/" class="v-header__body" />
     <div class="v-header__right">
-      <router-link to="/" ></router-link>
-      <button>注册</button>
+      <router-link to="/" class="v-header__search"  />
+      <button class="v-header__regist">注册</button>
     </div>
   </header>
 </template>
@@ -43,6 +41,31 @@ export default {
     height: 37px;
     background: url('../assets/images/logo.svg') no-repeat;
     margin-right: auto;
+  }
+  &__right {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    color: #464646;
+    font-weight: 600;
+    button {
+      color: inherit;
+      font-weight: inherit;
+      outline: none;
+      background: transparent;
+      border: none;
+      &.v-header__regist {
+        border-left: 1px solid #8e8e8e;
+        padding: 0 24px;
+      }
+    }
+  }
+  &__search {
+    width: 36px;
+    height: 36px;
+    background: url('../assets/images/search.svg') no-repeat;
+    background-size: cover;
+    margin-right: 24px;
   }
 }
 </style>
