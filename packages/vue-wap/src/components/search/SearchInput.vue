@@ -25,8 +25,7 @@ export default {
       return {
         ...this.$listeners,
         input: (e) => {
-          console.log(e.target.value)
-          this.$emit('input', e.target.value)
+          this.onInput(e)
         }
       }
     }

@@ -3,6 +3,7 @@
     <h3>搜索食谱</h3>
     <SearchInput
       v-model="searchResult"
+      @keyup.enter="keyupEnter"
     />
   </section>
 </template>
@@ -15,6 +16,11 @@ export default {
   }),
   components: {
     SearchInput
+  },
+  methods: {
+    keyupEnter (e) {
+      
+    }
   }
 }
 </script>
