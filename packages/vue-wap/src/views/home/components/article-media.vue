@@ -12,6 +12,7 @@
 </template>
 <style lang="scss" scoped>
 .v-top {
+  border-bottom: 1px solid #d8d8d8;
   &__image {
     position: relative;
     img {
