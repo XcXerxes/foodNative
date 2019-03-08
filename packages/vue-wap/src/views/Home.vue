@@ -4,7 +4,9 @@
     <section class="content-home">
       <article-media />
       <Search />
-      <feed-item />
+      <div class="feed-wrapper">
+        <feed-item />
+      </div>
     </section>
   </div>
 </template>
