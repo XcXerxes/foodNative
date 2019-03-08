@@ -26,6 +26,7 @@ export default {
   transition: all .3s ease;
   padding: 16px;
   z-index: 999;
+  background-color: #fff;
   &__menu {
     display: inline-block;
     width: 32px;
