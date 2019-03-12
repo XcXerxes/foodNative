@@ -5,6 +5,7 @@ import store from './vuex/store'
 import './utils/rem'
 import './registerServiceWorker'
 import './assets/styles/reset.css'
+import './assets/styles/root.scss'
 
 Vue.config.productionTip = false
 

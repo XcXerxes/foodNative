@@ -30,6 +30,7 @@ export default {
 .search-combobox {
   padding: 0 5px 32px;
   margin-bottom: 32px;
+  border-bottom: 1px solid #d8d8dd;
   h3 {
     text-align: center;
     margin: 30px 0;

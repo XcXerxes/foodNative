@@ -1,6 +1,9 @@
 <template>
-  <a class="card-media" href="javascript:;">
-    <div class="card-media__container">
+  <a class="card-media"
+    :class="`card-media__container-${size}`"
+    href="javascript:;">
+    <div class="card-media__container"
+    >
       <img :src="imgSrc" :alt="title">
       <div class="card-media__gradient"></div>
       <div class="card-media__like">
@@ -21,13 +24,17 @@
 <script>
 export default {
   props: {
+    size: {
+      type: String,
+      default: ''
+    },
     isPlayer: {
       type: Boolean,
       default: false
     },
     imgSrc: {
       type: String,
-      default: ''
+      default: 'https://images.kitchenstories.io/wagtailOriginalImages/R1564_photo_final/R1564_photo_final-small-portrait-150.jpg'
     },
     title: {
       type: String,
@@ -41,10 +48,6 @@ export default {
       type: String,
       default: ''
     },
-    title: {
-      type: String,
-      default: ''
-    },
     time: {
       type: Number,
       default: 1
@@ -52,3 +55,17 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.card-media {
+  padding: 0 16px;
+  &.card-media__container-small {
+    width: 300px;
+    flex: 0 0 300px;
+  }
+  &__container {
+    >img {
+      max-width: 100%;
+    }
+  }
+}
+</style>

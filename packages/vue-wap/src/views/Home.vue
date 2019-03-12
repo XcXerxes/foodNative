@@ -5,7 +5,7 @@
       <article-media />
       <Search />
       <div class="feed-wrapper">
-        <feed-item />
+        <feed-item v-for="(item, key) in feeds" :key="key" :item="item" />
       </div>
     </section>
   </div>
@@ -25,6 +25,19 @@ export default {
     articleMedia,
     Search,
     feedItem
-  }
+  },
+  data: () => ({
+    feeds: [
+      {},
+      {},
+      {},
+      {}
+    ]
+  })
 }
 </script>
+<style lang="scss" scoped>
+.feed-wrapper {
+  padding: 0 20px;
+}
+</style>

@@ -1,4 +1,4 @@
-$vf-primary: 31, 116, 255;
+$vf-primary: 10, 127, 120;
 $vf-secondary: 121, 49, 177;
 $vf-danger: 255, 71, 87;
 $vf-success: 70, 201, 58;
@@ -15,3 +15,12 @@ $vf-colors: (
   dark: $vf-dark,
   light: $vf-light
 );
+:root {
+  @each $name, $color in $vf-colors {
+    --vf-#{$name}: #{$color};
+  }
+}
+
+@function getColor($colorx, $alpha: 1) {
+  @return  #{unquote("rgba(var(--vf-"+$colorx+"), "+$alpha+")")};
+}
